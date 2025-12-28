@@ -45,7 +45,7 @@ export default async function Home() {
   const pokemonData = await getData();
 
   return (
-    <div className="container mx-auto px-4 py-8 border-2 border-amber-600 ">
+    <div className="container mx-auto px-4 py-8  ">
       <div className="min-h-screen bg-linear-to-b from-red-500 to-red-600">
         <h1 className="text-4xl md:text-6xl text-center text-white font-bold mb-8">
           pokedex

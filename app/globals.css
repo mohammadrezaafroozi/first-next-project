@@ -1,3 +1,37 @@
 @import "tailwindcss";
 
 
+/* app/globals.css */
+
+/* حذف margin و padding پیش‌فرض مرورگر */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* حذف margin پیش‌فرض body */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* اطمینان از پر شدن کامل صفحه */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* جلوگیری از اسکرول افقی */
+}
+
+
+@layer base {
+  /* حذف margin/padding پیش‌فرض */
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+  }
+}
